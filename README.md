@@ -2,7 +2,7 @@
   <p align="center">Rick and Morty Proyect</p>
 </h1>
 
-![Imagen ilustrativa](https://github.com/guido-sanz/guido-sanz-parcial1/blob/main/img/ColDualSptNoRack.jpg)
+![Image text](https://github.com/Tanqueta88/RickAndMortyApp/blob/master/RickAndMorty.png)
 
 <p align="left">
    <img src="https://img.shields.io/badge/STATUS-Development-green">
