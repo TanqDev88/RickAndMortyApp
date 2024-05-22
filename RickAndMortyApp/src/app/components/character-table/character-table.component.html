@@ -1,0 +1,36 @@
+<p>character-table works!</p>
+<h2>Character detail</h2>
+<table class="container">
+    <thead>
+      <tr>
+        <th>
+          <h1>ID</h1>
+        </th>
+        <th>
+          <h1>Character name</h1>
+        </th>
+        <th>
+          <h1>Status</h1>
+        </th>
+        <th>
+          <h1>Species</h1>
+        </th>
+        <th>
+          <h1>Type</h1>
+        </th>
+        <th>
+          <h1>Gender</h1>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let character of characters">
+        <td>{{ character.id }}</td>
+        <td>{{ character.name }}</td>
+        <td>{{ character.status }}</td>
+        <td>{{ character.species }}</td>
+        <td>{{ character.type }}</td>
+        <td>{{ character.gender }}</td>
+      </tr>
+    </tbody>
+  </table>
