@@ -9,3 +9,10 @@
    <img src="https://img.shields.io/badge/LANGUAJE-.NET-blueviolet">
    <img src="https://img.shields.io/badge/VERSION-1.0-blue">
 </p>
+
+## Content
+* [General information](#introduccion)
+* [Technologies](#technologies)
+* [Project installation](#installation)
+
+<a name="introduccion"></a> 
