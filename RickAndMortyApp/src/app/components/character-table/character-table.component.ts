@@ -25,4 +25,17 @@ export class CharacterTableComponent implements OnInit {
         console.log('Error fetching characters:', error);
       }
     );
+    private transformCharacterData(characters: Character[]): any[] {
+      return characters.map(character => ({
+        id: character.id,
+        name: character.name,
+        status: character.status,
+        species: character.species,
+        type: character.type,
+        gender: character.gender,
+        episodeCount: character.episode.length,
+        episodeUrls: character.episode
+      }));
+    }
   }
+}
