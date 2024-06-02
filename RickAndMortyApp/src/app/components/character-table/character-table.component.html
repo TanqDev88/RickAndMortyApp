@@ -55,3 +55,20 @@
       </tbody>
     </table>
 </div>
+<h2>Participation of characters in the series</h2>
+  <div class="container">
+    <table class="container">
+      <thead>
+        <tr>
+          <th><h1>Character name</h1></th>
+          <th><h1>Number of episodes</h1></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let character of characters">
+          <td>{{ character.name }}</td>
+          <td>{{ character.episodeCount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
