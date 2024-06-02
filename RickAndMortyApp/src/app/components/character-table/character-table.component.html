@@ -34,3 +34,24 @@
       </tr>
     </tbody>
   </table>
+  <h2>Characters and their episodes</h2>
+  <div class="container">
+    <table class="container">
+      <thead>
+        <tr>
+          <th><h1>Character name</h1></th>
+          <th><h1>Episodes</h1></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let character of characters">
+          <td>{{ character.name }}</td>
+          <td>
+            <select>
+              <option *ngFor="let episodeUrl of character.episodeUrls" [value]="episodeUrl">{{ episodeUrl }}</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
