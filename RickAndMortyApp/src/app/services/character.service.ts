@@ -5,5 +5,11 @@ import { Injectable } from '@angular/core';
 })
 export class CharacterService {
 
-  constructor() { }
+  private charactersUrl = 'https://rickandmortyapi.com/api/character';
+
+  constructor(private http: HttpClient) {}
+
+  getCharacters(): Observable<ApiResponse<Character>> {
+    return this.http.get<ApiResponse<Character>>(this.charactersUrl);
+  }
 }
