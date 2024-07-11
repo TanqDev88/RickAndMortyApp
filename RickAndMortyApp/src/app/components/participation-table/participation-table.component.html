@@ -1,0 +1,17 @@
+<h2>Tabla 3: Participacion de personajes en la serie</h2>
+  <div class="container">
+    <table class="container">
+      <thead>
+        <tr>
+          <th><h1>Nombre personaje</h1></th>
+          <th><h1>Número de episodios</h1></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let character of characters">
+          <td>{{ character.name }}</td>
+          <td>{{ character.episodeCount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
