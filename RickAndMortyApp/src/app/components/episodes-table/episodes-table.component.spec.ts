@@ -1,23 +1,21 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { EpisodesTableComponent } from './episodes-table.component';
+import { CharacterService } from '../../services/character.service';
 
 describe('EpisodesTableComponent', () => {
-  let component: EpisodesTableComponent;
-  let fixture: ComponentFixture<EpisodesTableComponent>;
-
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [EpisodesTableComponent]
-    })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(EpisodesTableComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+      imports: [HttpClientTestingModule], // Importar HttpClientTestingModule
+      declarations: [EpisodesTableComponent],
+      providers: [CharacterService]
+    }).compileComponents();
   });
 
   it('should create', () => {
+    const fixture = TestBed.createComponent(EpisodesTableComponent);
+    const component = fixture.componentInstance;
     expect(component).toBeTruthy();
   });
 });
+

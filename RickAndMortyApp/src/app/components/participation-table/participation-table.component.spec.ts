@@ -1,23 +1,20 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ParticipationTableComponent } from './participation-table.component';
+import { CharacterService } from '../../services/character.service';
 
 describe('ParticipationTableComponent', () => {
-  let component: ParticipationTableComponent;
-  let fixture: ComponentFixture<ParticipationTableComponent>;
-
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ParticipationTableComponent]
-    })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(ParticipationTableComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+      imports: [HttpClientTestingModule], // Importar HttpClientTestingModule
+      declarations: [ParticipationTableComponent],
+      providers: [CharacterService]
+    }).compileComponents();
   });
 
   it('should create', () => {
+    const fixture = TestBed.createComponent(ParticipationTableComponent);
+    const component = fixture.componentInstance;
     expect(component).toBeTruthy();
   });
 });

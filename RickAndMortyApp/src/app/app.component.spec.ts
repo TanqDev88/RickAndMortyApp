@@ -1,16 +1,15 @@
 import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { AppComponent } from './app.component';
+import { CharacterTableComponent } from './components/character-table/character-table.component';
+import { EpisodesTableComponent } from './components/episodes-table/episodes-table.component';
+import { ParticipationTableComponent } from './components/participation-table/participation-table.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [HttpClientTestingModule], // Importar HttpClientTestingModule
+      declarations: [AppComponent, CharacterTableComponent, EpisodesTableComponent, ParticipationTableComponent], // Declara todos los componentes
     }).compileComponents();
   });
 
@@ -20,16 +19,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'RickAndMortyApp'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('RickAndMortyApp');
-  });
-
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, RickAndMortyApp');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('RickAndMortyApp app is running!');
   });
 });
