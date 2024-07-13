@@ -1,0 +1,15 @@
+{
+  "HELLO": "Hola",
+  "WELCOME": "Bienvenido",
+  "LOGIN": "Iniciar sesion",
+  "USER": "Usuario",
+  "PASWORD": "Contraseña",
+  "ENTERNAME": "Ingresar nombre",
+  "NAME": "Nombre",
+  "GENDER": "Género",
+  "PROBABILITY": "Probabilidad",
+  "PROBABILITY_COUNTRY": "Probabilidad por pais",
+  "GET_INFORMATIONS": "Obtner datos",
+  "ERROR_MESSAJE": "Datos incorrectos. Revise usuario y/o clave"
+
+}
