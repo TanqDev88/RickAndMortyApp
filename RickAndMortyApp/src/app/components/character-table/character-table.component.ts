@@ -2,24 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { CharacterService } from '../../services/character.service';
 import { Character} from '../../models/character.model';
 import { ApiResponse } from '../../models/apiResponse.model';
-import { TranslateService } from '@ngx-translate/core';
-import { Router } from '@angular/router';
 
 
 @Component({
   selector: 'app-character-table',
   templateUrl: './character-table.component.html',
-  styleUrls: ['./character-table.component.scss']
+  styleUrls: ['./character-table.component.css']
 })
 export class CharacterTableComponent implements OnInit {
   characters: any[] = [];
 
-  constructor(private characterService: CharacterService, private router: Router,  private translate: TranslateService) { }
+  constructor(private characterService: CharacterService) { }
 
   ngOnInit(): void {
-    this.loadCharacters();
-    this.translate.setDefaultLang('en'); // Cambia 'en' al idioma por defecto que desees
-    this.translate.use('en'); // Cambia 'en' al idioma que deseas usar inicialmente
     this.loadCharacters();
   }
 
