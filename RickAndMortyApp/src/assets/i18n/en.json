@@ -1,0 +1,13 @@
+{
+  "TABLE_CHARACTER_DATA": "Table 1: Character data",
+  "CHARACTER_NAME": "Character's name",
+  "STATE": "State",
+  "EPISODES": "Episodes",
+  "SPECIES": "Species",
+  "TYPE": "Type",
+  "TABLE_CHARACTER_EPISODES": "Table 2: Characters and their episodes",
+  "GENDER": "Gender",
+  "PROBABILITY": "Episodes",
+  "TABLE_CHARACTER_PARTICIPATION": "Table 3: Participation of characters in the series",
+  "GET_INFORMATIONS": "Number of episodes"
+}

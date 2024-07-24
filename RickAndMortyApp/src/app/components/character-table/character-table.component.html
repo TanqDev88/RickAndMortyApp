@@ -1,0 +1,77 @@
+<h2>Tabla 1: Datos de personaje</h2>
+<table class="container">
+    <thead>
+      <tr>
+        <th>
+          <h1>ID</h1>
+        </th>
+        <th>
+          <h1>Nombre del personaje</h1>
+        </th>
+        <th>
+          <h1>Estado</h1>
+        </th>
+        <th>
+          <h1>Especie</h1>
+        </th>
+        <th>
+          <h1>Tipo</h1>
+        </th>
+        <th>
+          <h1>Genero</h1>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let character of characters">
+        <td>{{ character.id }}</td>
+        <td>{{ character.name }}</td>
+        <td>{{ character.status }}</td>
+        <td>{{ character.species }}</td>
+        <td>{{ character.type }}</td>
+        <td>{{ character.gender }}</td>
+      </tr>
+    </tbody>
+  </table>
+<br>
+<br>
+<br>
+<!-- <h2>Tabla 2: Personajes y sus episodios</h2>
+  <div class="container">
+    <table class="container">
+      <thead>
+        <tr>
+          <th><h1>Nombre personaje</h1></th>
+          <th><h1>Episodios</h1></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let character of characters">
+          <td>{{ character.name }}</td>
+          <td>
+            <select>
+              <option *ngFor="let episodeUrl of character.episodeUrls" [value]="episodeUrl">{{ episodeUrl }}</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<h2>Tabla 3: Participacion de personajes en la serie</h2>
+  <div class="container">
+    <table class="container">
+      <thead>
+        <tr>
+          <th><h1>Nombre personaje</h1></th>
+          <th><h1>Número de episodios</h1></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let character of characters">
+          <td>{{ character.name }}</td>
+          <td>{{ character.episodeCount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+
