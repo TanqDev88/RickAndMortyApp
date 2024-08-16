@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Mi aplicación Angular';  
+  title = 'Rick And Morty App';  
 
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['en', 'es']);
