@@ -6,7 +6,7 @@ import { CharacterService } from '../../services/character.service';
 describe('CharacterTableComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule], // Importar HttpClientTestingModule
+      imports: [HttpClientTestingModule], 
       declarations: [CharacterTableComponent],
       providers: [CharacterService]
     }).compileComponents();

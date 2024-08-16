@@ -8,8 +8,8 @@ import { ParticipationTableComponent } from './components/participation-table/pa
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule], // Importar HttpClientTestingModule
-      declarations: [AppComponent, CharacterTableComponent, EpisodesTableComponent, ParticipationTableComponent], // Declara todos los componentes
+      imports: [HttpClientTestingModule], 
+      declarations: [AppComponent, CharacterTableComponent, EpisodesTableComponent, ParticipationTableComponent], 
     }).compileComponents();
   });
 
