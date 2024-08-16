@@ -7,7 +7,7 @@ import { ApiResponse } from '../../models/apiResponse.model';
 @Component({
   selector: 'app-character-table',
   templateUrl: './character-table.component.html',
-  styleUrls: ['./character-table.component.css']
+  styleUrls: ['./character-table.component.scss']
 })
 export class CharacterTableComponent implements OnInit {
   characters: any[] = [];
