@@ -1,35 +1,12 @@
-body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  line-height: 1.42em;
-  color: #a7a1ae;
-  background-color: #ffffff;
-}
-
-// h1 {
-//   font-size: 3em;
-//   font-weight: 300;
-//   line-height: 1em;
-//   text-align: center;
-// }
-
 h2 {
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 0.5em;
+    font-size: 1,5em;
+    // font-weight: bold;
+    font-weight: 550;
     text-align: center;
-    color: #000000;
-}
-
-h2 a {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ba66fb;
-  text-decoration: none;
-}
-
-.blue {
-  color: #185875;
+    display: block;
+    line-height: 1em;
+    padding-bottom: 0.5em;
+    color: #2f2c2c;
 }
 
 .container th h1 {
@@ -37,15 +14,6 @@ h2 a {
   font-size: 1em;
   text-align: left;
   color: #ffffff;
-}
-
-.container td {
-  color: #ffffff;
-  font-weight: normal;
-  font-size: 1em;
-  -webkit-box-shadow: 0 2px 2px -2px #0e1119;
-  -moz-box-shadow: 0 2px 2px -2px #0e1119;
-  box-shadow: 0 2px 2px -2px #0e1119;
 }
 
 .container {
@@ -79,11 +47,4 @@ h2 a {
 
 .container td:first-child {
   color: #ffffff;
-}
-
-@media (max-width: 800px) {
-  .container td:nth-child(4),
-  .container th:nth-child(4) {
-    display: none;
-  }
 }
